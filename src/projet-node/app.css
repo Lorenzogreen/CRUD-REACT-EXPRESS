@@ -1,0 +1,423 @@
+.navbar-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #ebe0e0f8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, .1);
+}
+
+.navbar-top ul{    
+    margin: 0 !important;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.navbar-top ul li{
+    list-style: none;
+    display: inline-block;
+    height: 100%;
+    margin: 0 5px;
+}
+
+.navbar-top ul li a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    color: royalblue;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    transition: all ease-in-out .4s;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.navbar-top ul li a:hover{
+    color: white;
+    background: rgb(68, 152, 230);
+}
+
+.navbar-top ul li a.active{
+    color: white;
+    background: royalblue;
+}
+
+/* ****************************************** */
+
+.contenu{
+    overflow: hidden;
+    /* padding-top: 120px; */
+    min-height: 100vh;
+}
+
+/* ****************************************** */
+.nouveau-fce-page{
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.nouveau-fce-container{
+    width: 500px;
+    height: 650px;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+}
+
+.nouveau-fce-container .entete{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    border-bottom: 2px solid darkgray;
+    color: royalblue;
+    margin-bottom: 20px;
+}
+
+.nouveau-fce-container .container-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    height: 45px;
+}
+
+.nouveau-fce-container .section-bouton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    border-top: 2px solid darkgray;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.nouveau-fce-container .section-bouton button{
+    width: 120px;
+    height: 40px;
+    border: 2px solid royalblue;
+    color: royalblue;
+    border-radius: 20px;
+    background: transparent;
+    font-size: 1.05rem;
+    font-weight: bolder;
+    margin-right: 10px;
+    transition: all ease-in-out .4s;
+}
+
+.nouveau-fce-container .section-bouton button i{
+    font-weight: bolder;
+    font-size: 1.4rem;
+    line-height: 1px;
+    margin-right: 10px;
+}
+
+.nouveau-fce-container .section-bouton button:hover{
+    transform: scale(1.05);
+    color: white;
+    border-radius: 20px;
+    background: royalblue;
+}
+
+/* ********************************************************************* */
+.container-fce-page{
+    margin-top: 150px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, .1);
+}
+
+.container-fce-page .container-fce .entete{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 50px;
+    border-bottom: 2px solid darkgray;
+    color: royalblue;
+    margin-bottom: 20px;
+}
+
+.container-fce-page .container-fce thead{
+    color: white;
+    background: royalblue;
+}
+
+.container-fce-page .container-fce tbody button{
+    margin-right: 10px;
+    border: none;
+    background: transparent;
+}
+
+.container-fce-page .container-fce tbody button img{
+    width: 40px;
+    height: 40px;
+    transition: all ease .4s;
+}
+.container-fce-page .container-fce tbody button:hover img{
+    transform: scale(1.2);
+}
+
+.container-fce-page .detail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    height: 50px;
+    border-top: 1.5px solid darkgray;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+i.search-icon {
+    color: white;
+    background: royalblue;
+    width: 30px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    line-height: 1px;
+}
+
+/* *********************************************** */
+.modification-page{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .4));
+    transition: all ease .4s;
+}
+
+.modification-page.cacher{
+    opacity: 0;
+    z-index: -1;
+}
+
+.modification-page.afficher{
+    z-index: 100;
+    opacity: 1;
+}
+
+.modification-container{
+    width: 400px;
+    height: 650px;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    background: white;
+}
+
+.modification-container .entete{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    border-bottom: 2px solid darkgray;
+    color: royalblue;
+    margin-bottom: 20px;
+}
+
+.modification-container .container-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    height: 45px;
+}
+
+.modification-container .section-bouton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    border-top: 2px solid darkgray;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.modification-container .section-bouton button{
+    width: 120px;
+    height: 40px;
+    border: 2px solid royalblue;
+    color: royalblue;
+    border-radius: 20px;
+    background: transparent;
+    font-size: 1.05rem;
+    font-weight: bolder;
+    margin-right: 10px;
+    transition: all ease-in-out .4s;
+}
+
+.modification-container .section-bouton button i{
+    font-weight: bolder;
+    font-size: 1.4rem;
+    line-height: 1px;
+    margin-right: 10px;
+}
+
+.modification-container .section-bouton button:hover{
+    transform: scale(1.05);
+    color: white;
+    border-radius: 20px;
+    background: royalblue;
+}
+
+/*******************************************************************  */
+
+.suppression-page{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:  linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .4));
+    transition: all ease .4s;
+}
+
+.suppression-page.afficher{
+    z-index: 200;
+    opacity: 1;
+}
+
+.suppression-page.cacher{
+    opacity: 0;
+    z-index: -1;
+}
+
+.suppression-page .suppression-container{
+    width: 350px;
+    height: 200px;
+    background: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.suppression-container .entete-suppression{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    border-bottom: 2px solid darkgray;
+    color: royalblue;
+    margin-bottom: 20px;
+}
+
+.suppression-container .contenu-suppression{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.suppression-container .bouton-suppression{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    border-top: 2px solid darkgray;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+.suppression-container .bouton-suppression button{
+    width: 125px;
+    height: 40px;
+    border: 2px solid royalblue;
+    color: royalblue;
+    border-radius: 20px;
+    background: transparent;
+    font-size: 1.05rem;
+    font-weight: bolder;
+    margin-right: 10px;
+    transition: all ease-in-out .4s;
+}
+
+.suppression-container .bouton-suppression button i{
+    font-weight: bolder;
+    font-size: 1.4rem;
+    line-height: 1px;
+    margin-right: 10px;
+}
+
+.suppression-container .bouton-suppression button:hover{
+    transform: scale(1.05);
+    color: white;
+    border-radius: 20px;
+    background: royalblue;
+}
+
+/* ********************************************************* */
+.page-accueil{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100vh; 
+    padding: 0 60px !important;
+}
+
+.page-accueil .accueil-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.page-accueil .accueil-container .contenu-gauche{
+    font-size: 2.5rem;
+    color: royalblue;
+    border-radius: 20px;
+    margin: 10px 20px;
+}
+
+.page-accueil .accueil-container .contenu-droite button{
+    width: 300px;
+    height: 50px;
+    background: transparent;
+    border: 3px solid royalblue;
+    color: royalblue;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin: 10px 20px;
+    transition: all ease .4s;
+}
+
+.page-accueil .accueil-container .contenu-droite button:hover{
+    background: royalblue;
+    border: 3px solid royalblue;
+    color: white;
+    transform: scale(1.1);
+}
