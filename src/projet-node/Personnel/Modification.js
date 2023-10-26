@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { TbSearch, TbCheck, TbX } from 'react-icons/tb';
 import axios from 'axios';
-import useCustomeContext from '../Components/Context/useCustomeContext';
+import useCustomeContext from '../../Components/Context/useCustomeContext';
 
 const Modification = ({isModification, cacherModification, donnee})=>{
 
@@ -13,7 +13,7 @@ const Modification = ({isModification, cacherModification, donnee})=>{
         setToastTitle,
     } = useCustomeContext();
 
-    const [ congeModifier, setCongeModifier ] = useState({
+    const [ personnelModifier, setPersonnelModifier ] = useState({
         CIN: donnee.CIN,
         Nom: donnee.Nom,
         Prenom: donnee.Prenom,
@@ -28,7 +28,7 @@ const Modification = ({isModification, cacherModification, donnee})=>{
     })
 
     useEffect(()=>{
-        setCongeModifier(donnee)
+        setPersonnelModifier(donnee)
     },[donnee])
 
     const classModification = isModification ? "modification-page afficher" : "modification-page cacher"
